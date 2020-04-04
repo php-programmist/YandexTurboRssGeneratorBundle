@@ -29,9 +29,9 @@ class YandexTurboRssGenerator
     
     public function __construct(
         Environment $twig,
-        int $yandex_id,
-        string $language,
-        string $date_format
+        int $yandex_id = 0,
+        ?string $language = null,
+        ?string $date_format = null
     ) {
         $this->twig        = $twig;
         $this->yandex_id   = $yandex_id;

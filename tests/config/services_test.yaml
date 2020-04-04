@@ -1,0 +1,8 @@
+services:
+    php_programmist_yandex_turbo_rss_generator.yandex_turbo_rss_generator:
+        class: PhpProgrammist\YandexTurboRssGeneratorBundle\YandexTurboRssGenerator
+        autowire: true
+        public: true
+
+yandex_turbo_rss_generator:
+    yandex_id: 123456

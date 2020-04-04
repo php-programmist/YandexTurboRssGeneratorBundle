@@ -16,7 +16,8 @@
         "symfony/config": "^4.4 || ^5.0",
         "symfony/http-kernel": "^4.4 || ^5.0",
         "symfony/yaml": "^4.4 || ^5.0",
-        "doctrine/dbal": "^2.10"
+        "doctrine/dbal": "^2.10",
+        "symfony/twig-bundle": "^4.4 || ^5.0"
     },
     "require-dev": {
         "symfony/phpunit-bridge": "^4.4 || ^5.0",
