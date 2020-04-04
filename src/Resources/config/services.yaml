@@ -1,0 +1,8 @@
+services:
+    php_programmist_yandex_turbo_rss_generator.yandex_turbo_rss_generator:
+        class: PhpProgrammist\YandexTurboRssGeneratorBundle\YandexTurboRssGenerator
+        public: false
+        arguments:
+            - '@Twig\Environment'
+    PhpProgrammist\YandexTurboRssGeneratorBundle\YandexTurboRssGenerator:
+        alias: php_programmist_yandex_turbo_rss_generator.yandex_turbo_rss_generator

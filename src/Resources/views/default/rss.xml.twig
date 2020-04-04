@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:yandex="http://news.yandex.ru"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:turbo="http://turbo.yandex.ru"
+     version="2.0">
+    <channel>
+        <title>{{ base_page.name }}</title>
+        <link>{{ app.request.schemeAndHttpHost }}</link>
+        <description>{{ base_page.description }}</description>
+        <language>{{ language }}</language>
+        <turbo:analytics type="Yandex" id="{{ yandex_id }}"></turbo:analytics>
+{% for item in items -%}
+{{ include('@YandexTurboRssGenerator/default/item.xml.twig') }}
+{% endfor -%}
+    </channel>
+</rss>
