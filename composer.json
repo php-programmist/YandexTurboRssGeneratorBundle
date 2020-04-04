@@ -1,6 +1,6 @@
 {
     "name": "php-programmist/yandex-turbo-rss-generator-bundle",
-    "description": "Provides service that logs all mutable queries to the file",
+    "description": "Bundle for Sumfony 4-5 for generation RSS feed for Yandex Turbo pages.",
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
