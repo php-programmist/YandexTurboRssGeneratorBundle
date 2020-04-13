@@ -62,5 +62,4 @@ class YandexTurboRssGenerator
     {
         $this->template = $template;
     }
-    
 }
