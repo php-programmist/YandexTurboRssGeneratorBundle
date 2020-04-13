@@ -18,11 +18,12 @@ class YandexTurboRssGeneratorExtension extends Extension
     {
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
         $loader->load('services.yaml');
-    
+        
         $configuration = $this->getConfiguration($configs, $container);
-        $config = $this->processConfiguration($configuration, $configs);
-    
-        $definition = $container->getDefinition('php_programmist_yandex_turbo_rss_generator.yandex_turbo_rss_generator');
+        $config        = $this->processConfiguration($configuration, $configs);
+        
+        $definition = $container
+            ->getDefinition('php_programmist_yandex_turbo_rss_generator.yandex_turbo_rss_generator');
         $definition->setArgument(1, $config['yandex_id']);
         $definition->setArgument(2, $config['language']);
         $definition->setArgument(3, $config['date_format']);
