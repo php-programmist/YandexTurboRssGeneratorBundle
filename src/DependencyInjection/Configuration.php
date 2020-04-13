@@ -19,9 +19,18 @@ class Configuration implements ConfigurationInterface
         $rootNode = $treeBuilder->getRootNode();
         $rootNode
             ->children()
-                ->integerNode('yandex_id')->isRequired()->info('ID of your Yandex.Metrika counter')->end()
-                ->scalarNode('language')->defaultValue('ru-RU')->info('If language not set, default value - ru-RU')->end()
-                ->scalarNode('date_format')->defaultValue('D, d M Y H:i:s e')->info('If format not set, default value - D, d M Y H:i:s e')->end()
+                ->integerNode('yandex_id')
+                    ->defaultValue(0)
+                    ->info('ID of your Yandex.Metrika counter')
+                ->end()
+                ->scalarNode('language')
+                    ->defaultValue('ru-RU')
+                    ->info('If language not set, default value - ru-RU')
+                ->end()
+                ->scalarNode('date_format')
+                    ->defaultValue('D, d M Y H:i:s e')
+                    ->info('If format not set, default value - D, d M Y H:i:s e')
+                ->end()
             ->end();
         return $treeBuilder;
     }
