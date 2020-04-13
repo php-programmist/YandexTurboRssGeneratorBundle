@@ -38,10 +38,10 @@ class RssItem
      */
     public function addBreadcrumbs(string $link, string $name)
     {
-        $this->breadcrumbs[$link]=$name;
+        $this->breadcrumbs[$link] = $name;
     }
     
-    public function setAllBreadcrumbs(string $main_page_name,BasePageInterface $base_page)
+    public function setAllBreadcrumbs(string $main_page_name, BasePageInterface $base_page)
     {
         $this->addBreadcrumbs('/', $main_page_name);
         $this->addBreadcrumbs($base_page->getPath(), $base_page->getName());
@@ -95,5 +95,4 @@ class RssItem
     {
         return $this->breadcrumbs;
     }
-    
 }

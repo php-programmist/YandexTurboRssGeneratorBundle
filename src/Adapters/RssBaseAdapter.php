@@ -13,7 +13,7 @@ abstract class RssBaseAdapter implements RssAdapterInterface
     
     public function __construct(array $original_items, BasePageInterface $base_page)
     {
-        $this->adapt($original_items,  $base_page);
+        $this->adapt($original_items, $base_page);
     }
 
     abstract protected function adapt(array $original_items, BasePageInterface $base_page);
@@ -30,5 +30,4 @@ abstract class RssBaseAdapter implements RssAdapterInterface
     {
         $this->items[] = $item;
     }
-    
 }

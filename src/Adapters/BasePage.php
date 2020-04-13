@@ -8,7 +8,7 @@ class BasePage implements BasePageInterface
     private $description;
     private $path;
    
-    public function __construct(string $name, string $description,string $path)
+    public function __construct(string $name, string $description, string $path)
     {
         $this->name        = $name;
         $this->description = $description;
