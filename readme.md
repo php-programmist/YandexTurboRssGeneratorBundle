@@ -12,7 +12,7 @@ Create file config/packages/yandex_turbo_rss_generator.yaml:
 yandex_turbo_rss_generator:
     yandex_id: 12345678
     language: 'ru-RU'
-    date_format: 'D, d M Y H:i:s e'
+    date_format: 'Y-m-d\TH:i:sP'
 ```
 In param yandex_id you need to specify ID of your Yandex.Metrika counter for current site
 
